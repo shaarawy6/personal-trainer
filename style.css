@@ -50,22 +50,20 @@
     background-image: url(./images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0 -80px;
-    height: 100vh;
-    
+    background-position: center;
+    height: 100vh;   
 }
 
 #main .content{
-    margin-top: 150px;
+    margin-top: 380px;
+    margin-left: 28%;
     height: 100%;
 }
 
 #main h1{
     color: white;
-    font-size: 80px;
+    font-size: 60px;
     text-align: start;
-    margin-left: 410px;
-    margin-top: 200px;
     text-transform: uppercase;
 }
 
@@ -73,8 +71,6 @@
     color: rgb(218, 218, 218);
     font-size: 40px;
     text-align: start;
-    margin-left: 415px;
-    margin-top: 30px;
     font-weight: 100;
 }
 
@@ -83,8 +79,6 @@
     color: white;
     background-color: transparent;
     padding: 10px 50px;
-    margin-top: 50px;
-    margin-left: 420px;
     font-size: 20px;
     transition: .3s;
     cursor: pointer;
@@ -140,6 +134,7 @@
     height:530px;
     transition: .5s;
     box-shadow: 0 0 5px white;
+    width: 330px;
 }
 
 #plans .plan:hover{
@@ -220,11 +215,11 @@
 }
 
 #transformations .transformation img{
-    width: 400px;
+    width: 300px;
 }
 
 #transformations .transformation p{
-    width: 400px;
+    width: 300px;
 }
 
 /* footer */
@@ -263,11 +258,118 @@ footer .icons .icon{
 }
 
 /* media */
+@media(max-width:1140px){
+    /* nav */
+    #nav .links a{
+        font-size: 15px;
+    }
+
+    #nav .logo img{
+        width: 40px;
+    }
+
+    #main h1{
+        font-size: 50px;
+    }
+
+    #main h3{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    #main button{
+        margin-top: 30px;
+    }
+
+    /* transformation */
+    #transformations .transformation img{
+        width: 250px;
+    }
+
+    #transformations .transformation p{
+        width: 250px;
+    }
+    
+    /* footer */
+    footer .icons .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }    
+}
+
+@media(max-width: 1100px) {
+    /* nav */
+    #nav .links a{
+        font-size: 13px;
+    }    
+
+    /* main */
+    #main .content{
+        margin-top: 390px;
+        margin-left: 25%;
+        height: 100%;
+    }
+
+    /* about */
+    #about{
+        height: 30vh;
+    }
+    
+    #about h2{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    
+    #about p{
+        width: 80%;
+        color: white;
+        text-align: center;
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    /* plans */
+    #plans .plan{
+        width: 230px;
+    }
+
+    #plans .plan .price p{
+    font-size: 10px;
+    }
+
+    #plans .plan .text{
+        padding: 0 5px;
+        height: 295px;
+    }
+
+    #plans .plan .text p{
+        padding: 0 5px ;
+        margin: 20px;
+        width: 100%;
+    }
+    
+    #transformations .transformation{
+        padding: 10px;
+    }
+            
+    #transformations .transformation img{
+        width: 200px;
+    }
+    
+    #transformations .transformation p{
+        width: 200px;
+    }    
+}
+
 @media(max-width:768px){
     /* nav */
-    #nav{
-        justify-content: center;
-    }
+    #nav .links a{
+        font-size: 12px;
+    }    
 
     #nav .links{
         justify-content: center;
@@ -282,38 +384,23 @@ footer .icons .icon{
         margin: 10px;
     }
         
-    /* main */
-    #main{
-        background-position: 0;
-        height: 100%;
-        padding-bottom: 30px;
-        background-position: -80px 0;
-    }
-
     #main .content{
-        margin-top: 100px;
-        height: 100%;
+        margin-top: 300px;
     }
 
     #main h1{
-        font-size: 60px;
-        margin-left: 170px;
-        margin-top: 190px;
+        font-size: 30px;
     }
 
 
     #main h3{
-        font-size: 30px;
-        margin-left: 170px;
-        margin-top: 10px;
+        font-size: 20px;
     }
 
     #main button{
         border: 5px solid white;
         padding: 10px 50px;
-        margin-top: 20px;
-        margin-left: 170px;
-        font-size: 15px;
+        font-size: 10px;
     }
 
     #main button a{
@@ -327,13 +414,14 @@ footer .icons .icon{
     }
     
     #about h2{
-        font-size: 40px;
+        font-size: 30px;
         color: white;
         margin: 20px;
     }
     
     #about p{
         padding-bottom: 20px;
+        font-size: 12px;
     }
     
     /* plans */
@@ -346,7 +434,7 @@ footer .icons .icon{
     #plans .plan{
         height:100%;
         margin: 20px;
-        width: 600px;
+        width: 350px;
     }
 
      #plans .plan .text{
@@ -380,11 +468,57 @@ footer .icons .icon{
     }
 
     #transformations .transformation img{
-        width: 600px;
+        width: 350px;
     }
     
     #transformations .transformation p{
-        width: 600px;
+        width: 350px;
+    }
+
+    /* footer */
+    footer .icons .icon{
+        font-size: 15px;
+    }    
+    
+}
+
+@media(max-width:650px){
+    /* nav */
+    #nav .links a{
+        font-size: 10px;
+    }
+    
+    /* main */
+    #main{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #main .content{
+        margin-top: 180px;
+        margin-left: 28%;
+        height: 100%;
+    }    
+
+    #main h1{
+        font-size: 20px;
+    }
+    
+    #main h3{
+        color: rgb(218, 218, 218);
+        font-size: 15px;
+    }
+    
+    #main button{
+        border: 5px solid white;
+        color: white;
+        background-color: transparent;
+        padding: 5px 20px;
+        font-size: 15px;
+        transition: .3s;
+        cursor: pointer;
+        margin-top: 10px;
     }
 }
 
@@ -402,7 +536,7 @@ footer .icons .icon{
     }
 
     #nav .links a{
-        font-size: 7px;
+        font-size: 5px;
         padding: 0 6px;
     } 
 
@@ -420,31 +554,26 @@ footer .icons .icon{
     }
 
     #main .content{
-        margin-top: 60px;
-        height: 100%;
+        margin-top:120px;
         margin-bottom: 20px;
+        margin-left: 22%;
+        height: 100%;
     }
-
+    
     #main h1{
         color: white;
-        font-size: 20px;
+        font-size: 12px;
         text-align: start;
-        margin-left:100px;
-        margin-top: 60px;
         text-transform: uppercase;
     }
         
     #main h3{
-        font-size: 10px;
-        margin-left: 100px;
-        margin-top: 5px;
+        font-size: 8px;
     }
     
     #main button{
         border: 2px solid white;
         padding: 5px 25px;
-        margin-top: 0;
-        margin-left: 100px;
         font-size: 5px;
     }
     
@@ -455,7 +584,7 @@ footer .icons .icon{
     }
     
     #about h2{
-        font-size: 18px;
+        font-size: 10px;
         margin: 12.5px 0; /**/
         margin-bottom: 0;
     }
@@ -463,7 +592,7 @@ footer .icons .icon{
     #about p{
         width: 80%;
         line-height: 15px;
-        font-size: 14px;
+        font-size: 8px;
         text-align: start;
     }
     
@@ -480,28 +609,30 @@ footer .icons .icon{
         height:100%;
         box-shadow: 0 0 1.25px white;
         margin: 10px 0;
-        width: 270px;
+        width: 150px;
+        height: 100%;
     }
     
     #plans .plan .title{
         padding: 5px;
+        font-size: 7px;
     }
     
     #plans .plan .price{
-        padding: 7.5px;
+        padding: 10px;
     }
     
     #plans .plan .price p{
-       font-size: 3.25px;
+        font-size: 4px;
     }
     
     #plans .plan .text{
-        padding: 10px 7.5px;
-        height: 100%;
+        padding: 5px;
     }
     
     #plans .plan .text p{
         padding: 5px;
+        font-size: 8px;
     }
     
     #plans .plan button{
@@ -520,7 +651,7 @@ footer .icons .icon{
     
     #transformations .transformation{
         padding: 5px;
-        margin: 20px;
+        margin: 10px;
     }
 
     #transformations .transformation .image{
@@ -529,21 +660,22 @@ footer .icons .icon{
     }
     
     #transformations .transformation .text{
-        line-height: 20px;
+        line-height: 10px;
     }
     #transformations .transformation img{
-        width: 250px;
+        width: 150px;
     }
     
     #transformations .transformation p{
-        width: 250px;
+        width: 150px;
+        font-size: 7px;
     }
     
     /* footer */
     footer .text{
-        line-height: 20px;
-        margin-top: 20px;
-        font-size: 12px;
+        line-height: 10px;
+        margin-top: 10px;
+        font-size: 7px;
     }
 
     footer .icons{
@@ -551,18 +683,13 @@ footer .icons .icon{
     }
         
     footer .icons .icon{
-        width: 30px;
-        height: 30px;
-        margin: 20px;
-        font-size: 18px;
+        width: 20px;
+        height: 20px;
+        margin: 15px;
+        font-size: 10px;
     }
 }
 
-@media(max-width:320px){
-    /* main */
-    #main{
-        background-size: cover;
-        background-position: -30px 20px;
-        height: 100%;    
-    }    
+@media(max-width:200px){
+    
 }
