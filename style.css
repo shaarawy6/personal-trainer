@@ -65,7 +65,8 @@ body{
     background-image: url(./images/background.jpg);
     background-size:cover;
     background-position-y: 20%;
-    height: 100vh;   
+    height: 100%;
+    padding-bottom: 5em;   
 }
 
 #main .content{
@@ -115,9 +116,10 @@ body{
 =============
 */
 #about{
-    width: 100vw;
-    height: 40vh;
+    width: 100%;
+    height: 100%;
     background-color: #262626;
+    padding: 5em 0;
 }
 
 #about .text{
@@ -135,6 +137,7 @@ body{
 #about .about-title{
     font-size: 3rem;
     text-transform: uppercase;
+    padding-bottom: 1em;
 }
 
 #about p{
@@ -152,16 +155,17 @@ body{
 #plans {
     display: flex;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 100%;
     background-color: #1f1f1f;
     position: relative;
+    padding: 5em 0;
+    width: 100%;
 }
 
 #plans .plans-title{
     position: absolute;
     color: white;
     font-size: 3rem;
-    top: 4%;
     text-transform: uppercase;
 }
 
@@ -239,11 +243,13 @@ body{
 */
 #transformations{
     background-color: #1a1a1a;
-    height: 110vh;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     position: relative;
+    padding: 5em 0;
+    width: 100%;
 }
 
 #transformations .transformations-title{
@@ -450,17 +456,9 @@ footer .icons i{
         font-size: 10px;
     }
 
-    #plans .plan{
-        margin-top: 15%;
-    }
-
     #nav ul{
         width: 100%;
     }
-
-    /* #plans , #transformations{
-        height: 70vh;
-    } */
 }
 
 
@@ -469,60 +467,45 @@ footer .icons i{
         font-size: 8px;
     }
 
-    #main{
-        height: 50vh;
-        background-position-x: 80%;
-        background-size: cover;
-    }
-
-    #main .content{
-        margin-top: 60%;
-        margin-left: 5%;
-    }
-
-    #main h1{
-        width: 70%;
+    #plans .plans-title{
+        position: absolute;
+        top:1em;
     }
     
-    #about{
-        height: 20vh;
-    }
-
     #plans{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 100vh;
-        padding-top: 1em;
     }
 
     #plans .plan{
         width: 80%;
     }
 
-    #transformations{
+   #transformations{
         justify-content: center;
         flex-direction: column;
-        width: 100%;
-        height: 160vh;
-        padding-top: 6em;
+        padding: 6em 0;
+    }
+
+    #transformations .transformations-title{
+        top: 1em;
     }
 
     #transformations .transformation{
         width: 80%;
-    }
+    } 
 }
 
 @media(max-width:440px){
     html{
         font-size: 6px;
     }
-    
+/*     
     #main .content{
         margin-top: 50%;
         margin-left: 15%;
-    }
+    } */
 }
 
 @media(max-width:340px){
