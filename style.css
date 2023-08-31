@@ -499,7 +499,6 @@ footer .icons i{
 
     #nav .content{
         display: none;
-        top: 1em;
         flex-direction: column;
         margin: .5em 4.1em;
         line-height: 1.7;
@@ -523,6 +522,10 @@ footer .icons i{
 @media(max-width:740px){
     #nav i{
         font-size: 3rem;
+    }
+
+    #nav .content{
+        margin: .5em 3.1em;
     }
 }
 
@@ -578,6 +581,10 @@ footer .icons i{
 
     #nav i{
         font-size: 2rem;
+    }
+
+    #nav .content{
+        margin: .5em 2.1em;
     }
 
     #nav img{
@@ -640,4 +647,3 @@ footer .icons i{
         font-size: 5px;
     }
 }
-
